@@ -2,55 +2,397 @@
 note  git pull origin main
 */
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-
-.box{
-    padding: 0 76px;
+.box {
+  padding: 0 76px;
 }
 
-
-.header{
-    height: 84px;
-   /* border: 1px solid red; */
-   
-}
-.mid{
-    margin-top: 90px;
-    font-size: 80px;
-    color: #1d1d1d;
+section .box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
-.image-section{
-    display: flex;
-    gap: 20px;
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-bottom: 12px;
-    -webkit-overflow-scrolling: touch;
+.mid {
+  margin-top: 90px;
+  font-size: 80px;
+  color: #1d1d1d;
+  /* margin-bottom: 50px; */
 }
 
-
-
-.image-container{
-    display: flex;
-    flex-direction: column;
-    width: 184px;
-    border: 1px solid red;
+.image-section {
+  display: flex;
+  gap: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 12px;
 }
 
-.image{
+.image-section .image-container {
+  flex: 0 0 84px;
+}
+.image-section .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 1px solid red; */
+}
+
+.image-container .image {
+  width: 48px;
+}
+
+/* .image{
     height: auto;
-    flex: 0 0 48px;
-}
+    width: 48px;
+    /* flex: 0 0 48px; 
+} */
 
-.image-container .image img{
+/* .image-container .image img{
     display: block;
     width: 100%;
     height: auto;
+    border: 1px solid blue;
+} */
+.image-section::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
 }
+
+.image-section .image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-content {
+  margin-bottom: 50px;
+  text-align: center;
+  /* border: 2px solid #2020ca; */
+}
+
+.image-content p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.image-content span {
+  font-size: 10px;
+  font-weight: 600;
+  color: #b64400;
+}
+
+/* explore section */
+.explore-box {
+  padding: 100px 76px;
+}
+
+.explore-section {
+  background-color: #f5f5f7;
+}
+
+.explore-flex h3 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+
+.explore-image-flex {
+  display: flex;
+  gap: 10px;
+
+  margin-left: -76px;
+  padding-left: 76px;
+  box-sizing: border-box;
+
+  /* border: 2px solid red; */
+  overflow-x: auto;
+
+  margin-right: -76px;
+  overflow-y: hidden;
+  /* padding: -70; */
+}
+
+.explore-image-flex::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.explore-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  /* align-items: center; */
+  flex: 0 0 400px;
+  /* border: 2px solid blue; */
+}
+
+.explore-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.explore-flex a {
+  color: #0066cc;
+  /* color: #24da48; */
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.explore-flex a:hover {
+  text-decoration: underline;
+}
+
+.explore-image-boxs {
+  display: flex;
+  gap: 5px;
+}
+
+.gen-box {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.explore-image {
+  width: 372px;
+}
+
+.explore-image img {
+  width: 100%;
+}
+
+.explore-image-container h4 {
+  font-size: 28px;
+  font-weight: 600px;
+}
+.explore-image-container h5 {
+  font-size: 17px;
+  font-weight: 600px;
+  width: 150px;
+  text-align: center;
+}
+.explore-image-container p {
+  font-size: 14px;
+  text-align: center;
+  width: 230px;
+}
+
+.boxes1 {
+  background-color: #4b372a;
+}
+.boxes2 {
+  background-color: #e3d2ba;
+}
+.boxes3 {
+  background-color: #24211f;
+}
+.boxes4 {
+  background-color: #b6b3b2;
+}
+.boxes5 {
+  background-color: #f2e1b6;
+}
+.boxes6 {
+  background-color: #ded8d1;
+}
+.boxes7 {
+  background-color: #f0eae4;
+}
+.boxes8 {
+  background-color: #2a3040;
+}
+
+.explore-image-flex span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b64400;
+}
+.explore-btn button{
+border-radius: 20px;
+background-color: fff;
+border: none;
+color: #0066cc;
+cursor: pointer;
+font-size: 17px;
+}
+
+.explore-btn .btn-blue{
+border: none;
+background-color: #0066cc;
+padding: 10px 20px;
+color: #fff;
+}
+
+.explore-btn{
+    display: flex;
+    gap: 20px;
+
+}
+
+.angle-direction{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.angle-direction .left1{
+    font-size: 17px;
+    /* width: 36px;
+    height:36px; */
+    padding: 10px;
+    border-radius: 50%;
+    color: #1d1d1d;
+    background-color: #ededf0;
+
+}
+.angle-direction .right1{
+    font-size: 17px;
+    /* width: 36px;
+    height:36px; */
+    padding: 10px;
+    border-radius: 50%;
+    color: #1d1d1d;
+    background-color: #ededf0;
+}
+
+
+.explore-flex2 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: end;
+}
+
+.explore-flex2 a {
+  color: #0066cc;
+  /* color: #24da48; */
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.explore-flex2 a:hover {
+  text-decoration: underline;
+}
+
+.explore-flex2 h3 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1d1d1d;
+  flex-basis: 60%;
+}
+
+
+/* sub section of the above  */
+.apple-upgrade-content{
+    display: flex;
+    flex-direction: column;
+    gap:  10px;
+
+}
+
+.apple-upgrade-content h2{
+    font-size: 38px;
+    width: 350px;
+}
+.apple-upgrade-content h4{
+    font-size: 20px;
+}
+.apple-upgrade-content p{
+   width: 100%;
+   text-align: left;
+   font-size: 23px;
+}
+
+.apple-upgrade-gen{
+    background-color: #fff;
+    border-radius: 30px;
+    /* border: 3px solid red;
+     */
+     margin-top: 35px;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+/* apple section flex style */
+
+.apple-flex-contanier {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 120px;
+}
+
+.apple-flex-contanier ul li {
+  list-style: none;
+}
+
+.apple-contanier {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex-apple1,
+.flex-apple2,
+.flex-apple3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex-apple1 h2,
+.flex-apple2 h2,
+.flex-apple3 h2 {
+  font-size: 17px;
+  color: #6e6e73;
+}
+
+.flex-apple1 ul {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  font-size: 28px;
+  font-weight: 600;
+}
+.flex-apple2 ul,
+.flex-apple3 ul {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.section-apple-watch {
+  background-color: #fafafc;
+  height: 681px;
+  display: flex;
+  align-items: center;
+}
+
+/* .flex-apple1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
